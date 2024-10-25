@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<section>
+    <nav>
+        <ul>
+            <li><a class="navigation" href="index.html">Home</a></li>
+            <li><a class="navigation" href="contact-us.html">Contact Us</a></li>
+            <li><a class="navigation" href="gallery.html">Gallery</a></li>
+            <li><a class="navigation" href="testimonies.html">Testimonies</a></li>
+        </ul>
+    </nav>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+    <h2>Our Gallery</h2>
+
+    <!-- Pictures Section -->
+    <div class="gallery-section" id="pictures">
+        <h3>Pictures</h3>
+        <div class="gallery-grid">
+            <img src="images/design1.jpg" alt="Design 1" class="gallery-item" data-type="image">
+            <img src="images/design2.jpg" alt="Design 2" class="gallery-item" data-type="image">
+            <img src="images/design3.jpg" alt="Design 3" class="gallery-item" data-type="image">
+        </div>
+    </div>
+
+    <!-- Videos Section -->
+    <div class="gallery-section" id="videos">
+        <h3>Videos</h3>
+        <div class="gallery-grid">
+            <video class="gallery-item" data-type="video">
+                <source src="videos/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video class="gallery-item" data-type="video">
+                <source src="videos/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Overlay -->
+<div id="lightbox" class="lightbox">
+    <span id="close-lightbox">&times;</span>
+    <div id="lightbox-content"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
