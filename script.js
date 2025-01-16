@@ -9,48 +9,17 @@ document.getElementById('showVideosBtn').addEventListener('click', function() {
     document.getElementById('imageGallery').classList.add('hidden');
 });
 
-// Select gallery items and lightbox elements
-const galleryItems = document.querySelectorAll('.gallery-item');
-const lightbox = document.getElementById('lightbox');
-const lightboxContent = document.getElementById('lightbox-content');
-const closeLightbox = document.getElementById('close-lightbox');
+function openModal(imageSrc) {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    modalImage.src = imageSrc;
+    modal.style.display = "block";
+}
 
-// Function to open the lightbox
-galleryItems.forEach(item => {
-    item.addEventListener('click', () => {
-        lightbox.style.display = 'flex';
-        lightboxContent.innerHTML = '';
-
-        if (item.dataset.type === 'image') {
-            // For images
-            const img = document.createElement('img');
-            img.src = item.src;
-            img.alt = item.alt;
-            lightboxContent.appendChild(img);
-        } else if (item.dataset.type === 'video') {
-            // For videos
-            const video = document.createElement('video');
-            video.src = item.querySelector('source').src;
-            video.controls = true;
-            video.autoplay = true;
-            lightboxContent.appendChild(video);
-        }
-    });
-});
-
-// Close the lightbox
-closeLightbox.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-    lightboxContent.innerHTML = '';
-});
-
-// Close the lightbox when clicking outside the content
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-        lightbox.style.display = 'none';
-        lightboxContent.innerHTML = '';
-    }
-});
+function closeModal() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
 
 // Select the form and message container
 const contactForm = document.getElementById('contact-form');
