@@ -17,12 +17,23 @@
   <div class="contact-info">
     <p>📞 Call us: (+353) 089-2616760</p>
   </div>
+
+  <!--Navigation section-->
     <nav>
         <ul>
-            <li><a class="navigation" href="index.html">Home</a></li>
-            <li><a class="navigation" href="services.html">Services</a></li>
-            <li><a class="navigation" href="contact-us.html">Contact Us</a></li>
-            <li><a class="navigation" href="gallery.html">Gallery</a></li>
+          <li><a class="navigation" href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a class="navigation" href="services.html">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="mediawall.html">Media Wall</a></li>
+              <li><a href="ceilling.html">Ceilling Design & Dropdown</a></li>
+              <li><a href="wallpanels.html">Wall Panneling</a></li>
+              <li><a href="tiling.html">Tiling</a></li>
+              <li><a href="woodenfloor.html">Wooden Floor</a></li>
+            </ul>
+          </li>
+          <li><a class="navigation" href="contact-us.html">Contact Us</a></li>
+          <li><a class="navigation" href="gallery.html">Gallery</a></li>      
         </ul>
         <div class="search-container">
           <input type="text" id="search-bar" placeholder="Search...">
@@ -71,7 +82,7 @@
     <img src="images/carlow4.jpeg" alt="Carlow 5" onclick="openModal('images/carlow4.jpeg')">
     <img src="images/carlow5.jpeg" alt="Carlow 6" onclick="openModal('images/carlow5.jpeg')">
     <img src="images/carlow7.jpeg" alt="Carlow 7" onclick="openModal('images/carlow7.jpeg')">
-    <img src="images/carlow9.jpeg" alt="Carlow 8" onclick="openModal('images/Carlow9.jpeg')">
+    <img src="images/carlow9.jpeg" alt="Carlow 8" onclick="openModal('images/carlow9.jpeg')">
     <img src="images/carlow10.jpeg" alt="Carlow 9" onclick="openModal('images/carlow10.jpeg')">
   </div>
 </div>
@@ -100,8 +111,8 @@
   <h3>Bedroom</h3>
 <div class="gallery">
   <img src="images/polo.jpeg" alt="Polo 1" onclick="openModal('images/polo.jpeg')">
-  <img src="images/polo1.jpeg" alt="Polo 2" onclick="openModal('images/polo 1.jpeg')">
-  <img src="images/polo2.jpeg" alt="Polo 3" onclick="openModal('images/polo 2.jpeg')">
+  <img src="images/polo1.jpeg" alt="Polo 2" onclick="openModal('images/polo1.jpeg')">
+  <img src="images/polo2.jpeg" alt="Polo 3" onclick="openModal('images/polo2.jpeg')">
   <img src="images/bed.jpeg" alt="Bed 1" onclick="openModal('images/bed.jpeg')">
   <img src="images/bed1.jpeg" alt="Bed 2" onclick="openModal('images/bed1.jpeg')">
   <img src="images/bed2.jpeg" alt="Bed 3" onclick="openModal('images/bed2.jpeg')">
@@ -161,13 +172,25 @@
 
 <!-- Footer with menu -->
 <footer>
-  <ul class="footer-menu">
-      <li><a href="index.html">Home</a></li>
+  <section>
+    <ul class="footer-menu">
+      <li><a class="navigation" href="index.html">Home</a></li>
+      <li class="dropup">
+        <a class="navigation" href="services.html">Services</a>
+        <ul class="dropup-menu">
+          <li><a href="mediawall.html">Media Wall</a></li>
+          <li><a href="ceiling.html">Ceiling Design & Dropdown</a></li>
+          <li><a href="wallpanels.html">Wall Paneling</a></li>
+          <li><a href="tiling.html">Tiling</a></li>
+          <li><a href="woodenfloor.html">Wooden Floor</a></li>
+        </ul>
+      </li>
       <li><a href="contact-us.html">Contact Us</a></li>
       <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="services.html">Testimony</a></li>
-  </ul>
+    </ul>
+    
   <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+</section>
 </footer>
 
 <script src="script.js"></script>
