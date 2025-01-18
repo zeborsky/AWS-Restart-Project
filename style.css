@@ -1,9 +1,7 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e6e6fa; /* Replace with your desired color */
+    padding: 20px; /* Add some padding if needed */
 }
 
 /* Header */
@@ -17,6 +15,14 @@ header {
     font-weight: bold;
     color: #333;
     margin: 0;
+}
+
+/* Add a background color to the header or section above the navbar */
+header {
+    background-color: #4CAF50; /* Change to your desired color */
+    padding: 10px 0; /* Optional: adds some padding */
+    text-align: center; /* Centers the text in the header */
+    color: white; /* Optional: change text color */
 }
 
 /* Navigation Styles */
@@ -113,13 +119,58 @@ button[type="submit"]:hover {
     background-color: #777;
 }
 
+.hero h2 {
+    color: dodgerblue;
+    font-family: cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+
 /* Content */
 #content {
     text-align: center;
     margin: 20px;
 }
 
+/* Styling for featured image */
+.featured-image {
+    width: 100%; /* Ensure it takes up the full width of its container */
+    max-width: 500px; /* Limit maximum width */
+    height: 500px; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+    margin: 0 auto; /* Center image horizontally */
+}
+
+/* Styling for featured video */
+.featured-video {
+    width: 100%; /* Ensure it takes up the full width of its container */
+    max-width: 800px; /* Limit maximum width */
+    height: 500px; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the video */
+    margin: 0 auto; /* Center video horizontally */
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Change this to your desired font */
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold; /* Adjust font weight if needed */
+    text-align: center; /* Centers the text horizontally */
+    color: #333; /* Change text color if desired */
+}
+
+#name {
+    color: slateblue !important;
+    font-family: fantasy !important;
+    font-size: 1em !important;
+    text-align: center !important;
+}
+
 /* Gallery */
+#my-gallery {
+    color: #f00;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -227,7 +278,12 @@ button[type="submit"]:hover {
     transform: scale(1.1);
 }
 
+#my-video {
+    color: #f00;
+}
+
 #house-painting {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.6em;
     color: #ff6600;
     text-align: center;
