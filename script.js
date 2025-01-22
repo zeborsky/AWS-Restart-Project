@@ -9,6 +9,7 @@ document.getElementById('showVideosBtn').addEventListener('click', function() {
     document.getElementById('imageGallery').classList.add('hidden');
 });
 
+// Open modal function
 function openModal(imageSrc) {
     const modal = document.getElementById("imageModal");
     const modalImage = document.getElementById("modalImage");
@@ -16,9 +17,18 @@ function openModal(imageSrc) {
     modal.style.display = "block";
 }
 
+// Close modal function
 function closeModal() {
     const modal = document.getElementById("imageModal");
     modal.style.display = "none";
+}
+
+// Close modal if clicked outside the image
+window.onclick = function(event) {
+    const modal = document.getElementById('imageModal');
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
 }
 
 // Select the form and message container

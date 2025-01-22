@@ -3,37 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="description" content="Expert media wall installation, house painting, wallpaneling, tiling, and wooden flooring services for a stylish home makeover.">
+    <title>Media Wall, House Painting, Tiling, and Wooden Flooring Services</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body> 
 
       <!-- Header with Company Name -->
-    <header>
+      <header>
         <h1 class="company-name">My Company Name</h1>
     </header>
     
 <section>
-    <div class="contact-info">
+    <div class="contact-info" style="background-color: #4CAF50; padding: 10px 0; text-align: center; color: white;">
         <p>📞 Call us: (+353) 089-2616760</p>
       </div>
-    <nav>
+     <!--Navigation section-->
+     <nav>
         <ul>
-            <li><a class="navigation" href="index.html">Home</a></li>
-            <li><a class="navigation" href="services.html">Services</a></li>
-            <li><a class="navigation" href="contact-us.html">Contact Us</a></li>
-            <li><a class="navigation" href="gallery.html">Gallery</a></li>
+          <li><a class="navigation" href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a class="navigation" href="services.html">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="mediawall.html">Media Wall</a></li>
+              <li><a href="ceilling.html">Ceilling Design & Dropdown</a></li>
+              <li><a href="wallpanels.html">Wall Panneling</a></li>
+              <li><a href="tiling.html">Tiling</a></li>
+              <li><a href="woodenfloor.html">Wooden Floor</a></li>
+            </ul>
+          </li>
+          <li><a class="navigation" href="contact-us.html">Contact Us</a></li>
+          <li><a class="navigation" href="gallery.html">Gallery</a></li>      
         </ul>
         <div class="search-container">
-            <input type="text" id="search-bar" placeholder="Search...">
-            <button type="submit">Search</button>
-        </div>
+          <input type="text" id="search-bar" placeholder="Search...">
+          <button type="submit">Search</button>
+      </div>
     </nav>
 </section>
 
 <!-- Content Section with Picture and Video -->
 <section id="content">
-    <h2>Welcome to Our Interior Design World</h2>
+    <section class="hero">
+        <h2>Welcome to Our Interior Design World</h2>
+    </section>
 
     <!-- Picture -->
     <div class="media">
@@ -51,17 +64,32 @@
     </div>
 </section>
 
+<h2 id="house-painting">We also do house painting</h2>
+
+<p>Contact us for top-quality media wall, painting, tiling, and wooden flooring services.</p>
 <!-- Footer with menu -->
 <footer>
-    <ul class="footer-menu">
-        <li><a href="index.html">Home</a></li>
+    <section>
+      <ul class="footer-menu">
+        <li><a class="navigation" href="index.html">Home</a></li>
+        <li class="dropup">
+          <a class="navigation" href="services.html">Services</a>
+          <ul class="dropup-menu">
+            <li><a href="mediawall.html">Media Wall</a></li>
+            <li><a href="ceiling.html">Ceiling Design & Dropdown</a></li>
+            <li><a href="wallpanels.html">Wall Paneling</a></li>
+            <li><a href="tiling.html">Tiling</a></li>
+            <li><a href="woodenfloor.html">Wooden Floor</a></li>
+          </ul>
+        </li>
         <li><a href="contact-us.html">Contact Us</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="services.html">Testimony</a></li>
-    </ul>
+      </ul>
+      
     <p>&copy; 2025 Your Company. All Rights Reserved.</p>
-</footer>
-
-<script src="script.js"></script>    
-</body>
-</html>
+  </section>
+  </footer>
+  
+  <script src="script.js"></script>
+  </body>
+  </html>
