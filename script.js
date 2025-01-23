@@ -31,6 +31,40 @@ window.onclick = function(event) {
     }
 }
 
+// JavaScript for Video Modal
+document.querySelectorAll('.video-container video').forEach(video => {
+    video.addEventListener('click', function () {
+        const modal = document.getElementById('videoModal');
+        const modalVideo = document.getElementById('modalVideo');
+        modal.style.display = 'block';
+        modalVideo.src = this.querySelector('source').src;
+    });
+});
+
+// Open the video modal
+function openVideoModal(videoSrc) {
+    const modal = document.getElementById('videoModal');
+    const modalVideo = document.getElementById('modalVideo');
+    modal.style.display = 'flex';
+    modalVideo.src = videoSrc;
+    modalVideo.play();
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    const modalVideo = document.getElementById('modalVideo');
+    modal.style.display = 'none';
+    modalVideo.pause();
+    modalVideo.src = ''; // Clear the source
+}
+
+// Close the modal when clicking outside the video
+document.getElementById('videoModal').addEventListener('click', function (e) {
+    if (e.target === this) {
+        closeVideoModal();
+    }
+});
+
 // Select the form and message container
 const contactForm = document.getElementById('contact-form');
 const formMessage = document.getElementById('form-message');
