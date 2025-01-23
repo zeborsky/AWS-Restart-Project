@@ -9,6 +9,8 @@ header {
     text-align: center;
     padding: 20px 0;
 }
+/* Style for the header */
+
 
 .company-name {
     font-size: 2em;
@@ -19,7 +21,7 @@ header {
 
 /* Add a background color to the header or section above the navbar */
 header {
-    background-color: #4CAF50; /* Change to your desired color */
+    background-color: blueviolet; /* Change to your desired color */
     padding: 10px 0; /* Optional: adds some padding */
     text-align: center; /* Centers the text in the header */
     color: white; /* Optional: change text color */
@@ -93,7 +95,7 @@ nav ul li a:hover {
 }
 
 /* Search Bar */
-.search-container {
+/*.search-container {
     display: flex;
     align-items: center;
 }
@@ -124,7 +126,7 @@ button[type="submit"]:hover {
     font-family: cursive;
     font-size: 2em;
     text-align: center;
-}
+}*/
 
 
 /* Content */
