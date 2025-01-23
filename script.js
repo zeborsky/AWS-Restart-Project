@@ -41,13 +41,13 @@ document.querySelector('.video-container').addEventListener('click', function (e
 });
 
 // Open the video modal
-function openVideoModal(videoSrc) {
+/*function openVideoModal(videoSrc) {
     const modal = document.getElementById('videoModal');
     const modalVideo = document.getElementById('modalVideo');
     modal.style.display = 'flex';
     modalVideo.src = videoSrc;
     modalVideo.play();
-}
+}*/
 
 function closeVideoModal() {
     const modal = document.getElementById('videoModal');
