@@ -11,6 +11,7 @@ document.getElementById('showVideosBtn').addEventListener('click', function() {
 
 // Open modal function
 function openModal(imageSrc) {
+    closeVideoModal(); // Close video modal if open
     const modal = document.getElementById("imageModal");
     const modalImage = document.getElementById("modalImage");
     modalImage.src = imageSrc;
@@ -32,13 +33,11 @@ window.onclick = function(event) {
 }
 
 // JavaScript for Video Modal
-document.querySelectorAll('.video-container video').forEach(video => {
-    video.addEventListener('click', function () {
-        const modal = document.getElementById('videoModal');
-        const modalVideo = document.getElementById('modalVideo');
-        modal.style.display = 'block';
-        modalVideo.src = this.querySelector('source').src;
-    });
+document.querySelector('.video-container').addEventListener('click', function (e) {
+    if (e.target.tagName === 'VIDEO') {
+        const videoSrc = e.target.querySelector('source').src;
+        openVideoModal(videoSrc);
+    }
 });
 
 // Open the video modal
@@ -62,30 +61,5 @@ function closeVideoModal() {
 document.getElementById('videoModal').addEventListener('click', function (e) {
     if (e.target === this) {
         closeVideoModal();
-    }
-});
-
-// Select the form and message container
-const contactForm = document.getElementById('contact-form');
-const formMessage = document.getElementById('form-message');
-
-// Form submission event
-contactForm.addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent actual form submission
-
-    // Check if all fields are filled
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    if (name && email && message) {
-        // Display success message
-        formMessage.textContent = 'Thank you for reaching out! We will get back to you shortly.';
-        formMessage.style.color = 'green';
-        contactForm.reset(); // Clear the form
-    } else {
-        // Display error message if fields are missing
-        formMessage.textContent = 'Please fill out all fields.';
-        formMessage.style.color = 'red';
     }
 });
