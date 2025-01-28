@@ -94,6 +94,10 @@ nav ul li a:hover {
     background-color: #666;
 }
 
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
 /* Search Bar */
 /*.search-container {
     display: flex;

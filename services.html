@@ -20,22 +20,22 @@
   </div>
 
   <!--Navigation section-->
-    <nav>
-        <ul>
-          <li><a class="navigation" href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a class="navigation" href="services.html">Services</a>
-            <ul class="dropdown-menu">
-              <li><a href="mediawall.html">Media Wall</a></li>
-              <li><a href="ceilling.html">Ceilling Design & Dropdown</a></li>
-              <li><a href="wallpanels.html">Wall Panneling</a></li>
-              <li><a href="tiling.html">Tiling</a></li>
-              <li><a href="woodenfloor.html">Wooden Floor</a></li>
-            </ul>
-          </li>
-          <li><a class="navigation" href="gallery.html">Gallery</a></li>      
+  <nav>
+    <ul>
+      <li><a class="navigation" href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-togggle" href="services.html">Services</a>
+        <ul class="dropdown-menu">
+          <li><a href="services.html#mediawall">Media Wall</a></li>
+          <li><a href="services.html#ceillingdesign">Ceilling Design & Dropdown</a></li>
+          <li><a href="services.html#wallpanels">Wall Panneling</a></li>
+          <li><a href="services.html#tiling">Tiling</a></li>
+          <li><a href="services.html#woodenflooring">Wooden Flooring</a></li>
         </ul>
-    </nav>
+      </li>
+      <li><a class="navigation" href="gallery.html">Gallery</a></li>      
+    </ul>
+</nav>
 </section>
 
  <!-- Hero Section -->
@@ -49,7 +49,8 @@
   <h1 id="my-gallery">Welcome to Our Home Improvement Services</h1>
 
   <!-- Services Section -->
-<section id="services" class="services-section">
+<section>   
+<section id="mediawall" class="services-section">
     <h1>Our Services</h1>
     <div class="service-item">
         <div class="gallery">
@@ -61,7 +62,9 @@
         <h2>Media Wall Design</h2>
         <p>We create stunning media walls tailored to your style and needs.</p>
     </div>
+  </section>
 
+    <section id="wallpanels" class="services-section">
     <div class="service-item">
         <h2>Wall Paneling</h2>
             <div class="gallery">
@@ -72,16 +75,74 @@
             </div>
         <p>Enhance your walls with our professional paneling services.</p>
     </div>
+  </section>
+
+  <section id="ceillingdesign" class="services-section">
+    <div class="service-item">
+        <h2>Ceilling Design & Dropdown</h2>
+        <div class="gallery">
+          <img src="images/carlow5.jpeg" alt="Emma 3" onclick="openModal('images/carlow5.jpeg')">
+          <img src="images/perl1.jpeg" alt="Emma 5" onclick="openModal('images/perl1.jpeg')">
+          <img src="images/obi3.jpeg" alt="Emma 6" onclick="openModal('images/obi3.jpeg')">
+        </div>
+        <p>Get beautiful and durable tiles installed by experts.</p>
+    </div>
+  </section>
+
+  <section id="tiling" class="services-section">
     <div class="service-item">
         <h2>Tiling Services</h2>
         <p>Get beautiful and durable tiles installed by experts.</p>
     </div>
+  </section>
+
+    <section id="woodenflooring" class="services-section">
     <div class="service-item">
         <h2>Wooden Flooring</h2>
         <p>Upgrade your floors with our elegant wooden flooring solutions.</p>
     </div>
-    <div class="service-item">
-        <h2>Professional Painting</h2>
-        <p>Give your walls a fresh look with our top-notch painting services.</p>
-    </div>
+  </section>
 </section>
+
+  <!-- Modal -->
+ <div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img id="modalImage" class="modal-content">
+</div>
+
+<!-- Lightbox Overlay -->
+<div id="lightbox" class="lightbox">
+  <span id="close-lightbox">&times;</span>
+  <div id="lightbox-content"></div>
+</div>
+
+<h2 id="house-painting">We also do house painting</h2>
+
+<p class="large-paragraph">Contact us for top-quality media wall, painting, tiling, painting and wooden flooring services.</p>
+<p class="large-paragraph">Have questions? Reach out to us for more information.</p>
+<!-- Footer with menu -->
+<footer>
+    <section>
+      <ul class="footer-menu">
+        <li><a class="navigation" href="index.html">Home</a></li>
+        <li class="dropup">
+          <a class="navigation" href="services.html">Services</a>
+          <ul class="dropup-menu">
+            <li><a href="services.html#mediawall">Media Wall</a></li>
+            <li><a href="services.html#ceillingdesign">Ceilling Design & Dropdown</a></li>
+            <li><a href="services.html#wallpanels">Wall Panneling</a></li>
+            <li><a href="services.html#tiling">Tiling</a></li>
+            <li><a href="services.html#woodenflooring">Wooden Flooring</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+      
+    <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+  </section>
+  </footer>
+  
+  <script src="script.js"></script>
+  </body>
+  </html>
+
