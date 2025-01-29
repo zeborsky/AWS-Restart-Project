@@ -6,18 +6,20 @@ body {
 
 /* Header */
 header {
-    text-align: center;
-    padding: 20px 0;
+    text-align: center; /* Align text center*/
+    padding: 20px 0; /* Add some padding if needed */
 }
 /* Style for the header */
 
-
 .company-name {
-    font-size: 2em;
+    font-size: 2.5em; /* Increase size for better emphasis */
     font-weight: bold;
-    color: #333;
-    margin: 0;
+    color: #222; /* Slightly darker color for contrast */
+    text-transform: uppercase; /* Makes the text all caps */
+    letter-spacing: 2px; /* Adds spacing between letters for a modern look */
+    margin: 10px 0; /* Adds spacing around the text */
 }
+
 
 /* Add a background color to the header or section above the navbar */
 header {
@@ -27,39 +29,39 @@ header {
     color: white; /* Optional: change text color */
 }
 
-/* Navigation Styles */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #333;
+    padding: 15px 20px; /* More padding for better spacing */
+    background-color: #222; /* Slightly darker shade for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
+    display: flex; /*  arranged in a row */
+    justify-content: center;/* Aligns the navigation menu items in the center of the navigation bar */
+    list-style: none; /* Removes the default bullet points from the list items */
+    margin: 0; /* Removes default spacing around the list to prevent unnecessary gaps */
     padding: 0;
-    gap: 20px;
+    gap: 20px; /* Adds spacing between menu items to improve readability */
 }
 
 nav ul li {
-    position: relative;
+    position: relative; /* are properly aligned relative to the parent */
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: bold;
+    color: white; /* Makes the navigation links white for better contrast against dark backgrounds */
+    text-decoration: none; /* Removes the default underline from the links */
+    padding: 10px 15px; /* Adds spacing around the links to increase clickable area for better usability */
+    font-weight: bold; /* Makes the text bold for better visibility */
 }
 
 nav ul li a:hover {
     background-color: #555;
     color: #fff;
-}
+} 
 
 /* Dropdown Menu */
 .dropdown:hover .dropdown-menu {
